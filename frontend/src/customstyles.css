@@ -1,0 +1,72 @@
+.text-outline {
+ 
+  
+ 
+ 
+  
+    position: relative;
+    /* Adjust as needed */
+    /* Adjust as needed */
+    color: white; /* Text color is transparent */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke: linear-gradient(90deg, #ff7e5f, #feb47b) ;
+    /* background: linear-gradient(90deg, #ff7e5f, #feb47b); */
+    font-weight: bold;
+  }
+  .text-stroke-purple{
+    -webkit-text-stroke-color: #7508B8;
+  }
+  .text-transparent{
+    color: transparent;
+  }
+  .text-outline-lg{
+    -webkit-text-stroke-width: 2px;
+
+  }
+  /* .text-outline::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    /* color: blue;  */
+    
+    /* Adjust shadow size and color to create the outline effect */
+  /* }
+   */
+
+   .gradient-border {
+    position: relative;
+    display: inline-block;
+  }
+
+  .gradient-border::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, #B45DEA, #340352);
+    z-index: -1;
+    border-radius: 50px;
+  }
+
+  .input-field {
+    position: relative;
+    /* padding: 10px; */
+    border: 2px solid transparent;
+    /* border-radius: 8px; */
+    background: white;
+  }
+  .background-gradient{
+    background: linear-gradient(45deg, #A28EFF, #5A0A8B);
+  }
+  .hero{
+    background-image: url('./Assets/hero-background.jpg');
+   
+    background-size: cover;
+    background-position: center;
+   
+  }

@@ -1,10 +1,7 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+  font-family: "Open Sans", sans-serif;
+
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -35,4 +32,14 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.open-sans-normal {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
 }

@@ -1,8 +1,10 @@
 import react from "react";
 import { Outlet } from "react-router-dom";
+import Navbar from "./Navbar";
 const Layout = () =>{
     return(
-    <Outlet />
+        <>
+    <Outlet /></>
     )
 }
 export default Layout;
