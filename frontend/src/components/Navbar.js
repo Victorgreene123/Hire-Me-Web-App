@@ -24,7 +24,7 @@ const Navbar = (props) => {
   
     return (
       <nav
-        className={`flex w-full h-[65px] lg:px-5 p-3 ${props.isHomePage ? 'bg-transparent': 'bg-white'} text-[18px] items-center ${
+        className={`flex w-full h-[65px] lg:px-5 p-3 ${props.isHomePage ? isFixed ? 'bg-[#340352]' : 'bg-transparent' : 'bg-white'} text-[18px] items-center ${
           isFixed ? 'fixed top-0 left-0 z-50 shadow-lg bg-[#340352]' : ''
         }`}
       >
