@@ -56,7 +56,7 @@ const Home =() =>{
         <img className="w-full" src={pageui}></img>
         </div>
        
-        <div className=" h-full lg:w-3/4 lg:pt-5 mx-auto w-full">
+        <div className=" h-full lg:w-3/4 lg:pt-5 mx-auto w-full px-2">
         <h1 className="tracking-tighter  lg:text-5xl font-semibold text-[2.5rem] text-left lg:text-left leading-tight">Up your work game, <span className="text-outline-big text-outline text-stroke-purple ">it’s easy</span></h1>
         <h3 className="flex items-start mt-2 p-2 gap-4" >
          
