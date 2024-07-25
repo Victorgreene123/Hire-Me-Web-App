@@ -25,16 +25,16 @@ const Navbar = (props) => {
     return (
       <nav
         className={`flex w-full h-[65px] lg:px-5 p-3 ${props.isHomePage ? 'bg-transparent': 'bg-white'} text-[18px] items-center ${
-          isFixed ? 'fixed top-0 left-0 z-50 shadow-lg bg-white' : ''
+          isFixed ? 'fixed top-0 left-0 z-50 shadow-lg bg-[#340352]' : ''
         }`}
       >
-        <i className={`fas fa-bars ${ isFixed ? 'text-gray-500' : 'text-white'} lg:hidden`}></i>
+        <i className={`fas fa-bars ${ isFixed ? 'text-white' : 'text-white'} lg:hidden`}></i>
         <img src={logo} alt="Logo" className="w-24 h-auto" />
         <div className="absolute flex items-center lg:hidden right-4">
           <Link to="/find-professionals" className="mr-3 text-[1rem]">
             <span className="text-outline text-stroke-purple open-sans-normal">Log in</span>
           </Link>
-          <i className={`fas fa-search ${ isFixed ? 'text-gray-500' : 'text-white'}`}></i>
+          <i className={`fas fa-search ${ isFixed ? 'text-white' : 'text-white'}`}></i>
         </div>
         <div className="hidden lg:flex items-center flex-grow">
           <Link to="/find-professionals" className="ml-10 text-[1rem]">
@@ -47,7 +47,7 @@ const Navbar = (props) => {
               className="input-field w-full pl-4 p-1 pr-12 border border-gray-300 rounded-full text-white text-sm"
             />
             <span className="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
-              <i className="fas fa-search text-gray-500"></i> {/* Font Awesome icon */}
+              <i className="fas fa-search text-white"></i> {/* Font Awesome icon */}
             </span>
           </div>
           <Link to="/find-professionals" className="mr-8 text-[1rem]">
