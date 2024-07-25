@@ -32,7 +32,7 @@ const Navbar = (props) => {
         <img src={logo} alt="Logo" className="w-24 h-auto" />
         <div className="absolute flex items-center lg:hidden right-4">
           <Link to="/find-professionals" className="mr-3 text-[1rem]">
-            <span className="text-outline text-stroke-purple open-sans-normal">Log in</span>
+            <span className="text-white open-sans-normal">Log in</span>
           </Link>
           <i className={`fas fa-search ${ isFixed ? 'text-white' : 'text-white'}`}></i>
         </div>

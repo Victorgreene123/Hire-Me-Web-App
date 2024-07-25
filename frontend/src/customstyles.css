@@ -24,6 +24,10 @@
     -webkit-text-stroke-width: 2px;
 
   }
+  .text-outline-big{
+    -webkit-text-stroke-width: 3px;
+
+  }
   /* .text-outline::before {
     content: attr(data-text);
     position: absolute;
