@@ -8,7 +8,7 @@ import heroimage4 from '../Assets/heroimage_4.jpg'
 import heroimage5 from '../Assets/heroimage_5.jpg'
 import pageui from '../Assets/pageui.png'
 import flyer from '../Assets/hireme original 1_010357.jpg'
-import { FaHandshake, FaHandshakeAltSlash, FaLocationArrow, FaMapMarked, FaMapMarkedAlt, FaMapMarker, FaMapMarkerAlt, FaMapPin, FaMedal, FaSearchLocation } from 'react-icons/fa'; // Font Awesome Medal icon
+import { FaEdit, FaHandshake, FaHandshakeAltSlash, FaLocationArrow, FaMapMarked, FaMapMarkedAlt, FaMapMarker, FaMapMarkerAlt, FaMapPin, FaMedal, FaSearchLocation } from 'react-icons/fa'; // Font Awesome Medal icon
 import { MdStar } from 'react-icons/md';
 const Home =() =>{
     const [isFixed, setIsFixed] = useState(false);
@@ -59,7 +59,8 @@ const Home =() =>{
         <div className=" h-full lg:w-3/4 lg:pt-5 mx-auto w-full">
         <h1 className="tracking-tighter  lg:text-5xl font-semibold text-[2.5rem] text-left lg:text-left leading-tight">Up your work game, <span className="text-outline-big text-outline text-stroke-purple ">it’s easy</span></h1>
         <h3 className="flex items-start mt-2 p-2 gap-4" >
-            <i className="fas fa-edit text-2xl font-thin"></i>
+         
+            <FaEdit  className="text-2xl font-thin"/>
             <span className="block">
                 <h4 className="text-2xl font-semibold">No cost to join</h4>
                 <h4>Register and view various talent</h4>
