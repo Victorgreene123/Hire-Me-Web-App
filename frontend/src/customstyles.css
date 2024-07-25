@@ -36,29 +36,14 @@
   /* }
    */
 
-   .gradient-border {
-    position: relative;
-    display: inline-block;
-  }
-
-  .gradient-border::before {
-    content: '';
-    position: absolute;
-    top: -2px;
-    left: -2px;
-    right: -2px;
-    bottom: -2px;
-    background: linear-gradient(45deg, #B45DEA, #340352);
-    z-index: -1;
-    border-radius: 50px;
-  }
+  
 
   .input-field {
     position: relative;
     /* padding: 10px; */
-    border: 2px solid transparent;
-    /* border-radius: 8px; */
-    background: white;
+    border: 2px solid #B45DEA;
+    /* border-radius: 8px;  */
+    background: transparent;
   }
   .background-gradient{
     background: linear-gradient(45deg, #A28EFF, #5A0A8B);

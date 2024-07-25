@@ -10,8 +10,9 @@ import heroimage5 from '../Assets/heroimage_5.jpg'
 const Home =() =>{
     return(
         <>
-        <div className="hero lg:h-[90vh] h-[62vh] w-full ">
+        <div className="relative hero lg:h-[90vh] h-[62vh] w-full ">
         <Navbar isHomePage={true}/>
+       
         <div className="   w-[100%] mx-auto lg:flex block gap-10 pl-8 pr-8 lg:pl-5 lg:pr-0 lg:mt-12 mt-20">
             <div className="lg:w-1/2 lg:px-2  mx-auto lg:mx-0 w-full">
                 <h1 className="text-white lg:text-6xl font-semibold text-3xl text-left lg:text-left "> Your Trusted Source for <span className="text-outline-lg text-outline text-stroke-purple text-transparent"> Professional Services</span></h1>
@@ -20,45 +21,16 @@ const Home =() =>{
             Get Started
           </button>
             </div>
-            <div className="grid w-2/5 mx-auto px-10 grid-cols-2 gap-1 justify-center  scrolling hidden lg:grid">
+            <div className="grid w-2/5 mx-auto px-10 grid-cols-2 gap-5 justify-center  scrolling hidden lg:grid">
             <img className="" src={heroimage1} alt="" />
-            <img className="" src={heroimage1} alt="" />
-            <img className="" src={heroimage1} alt="" />
-            <img className="" src={heroimage1} alt="" />
+            <img className=""src={heroimage4} alt="" />
+            <img className="" src={heroimage3} alt="" />
+            <img className="" src={heroimage4} alt="" />
             </div>
         </div>
-        
+        {/* <div className=" h-full bg-[#340352] opacity-20 absolute top-0 left-0 w-full"></div> */}
        </div>
-       <h1 className=" text-blue-500">Home Page</h1>
-       <h1 className=" text-blue-500">Home Page</h1>
-       <h1 className=" text-blue-500">Home Page</h1>
-       <h1 className=" text-blue-500">Home Page</h1>
-       <h1 className=" text-blue-500">Home Page</h1>
-       <h1 className=" text-blue-500">Home Page</h1>
-       <h1 className=" text-blue-500">Home Page</h1>
-       <h1 className=" text-blue-500">Home Page</h1>
-       <h1 className=" text-blue-500">Home Page</h1>
-       <h1 className=" text-blue-500">Home Page</h1>
-       <h1 className=" text-blue-500">Home Page</h1>
-       <h1 className=" text-blue-500">Home Page</h1>
-       <h1 className=" text-blue-500">Home Page</h1>
-       <h1 className=" text-blue-500">Home Page</h1>
-       <h1 className=" text-blue-500">Home Page</h1>
-       <h1 className=" text-blue-500">Home Page</h1>
-       <h1 className=" text-blue-500">Home Page</h1>
-       <h1 className=" text-blue-500">Home Page</h1>
-       <h1 className=" text-blue-500">Home Page</h1>
-       <h1 className=" text-blue-500">Home Page</h1>
-       <h1 className=" text-blue-500">Home Page</h1>
-       <h1 className=" text-blue-500">Home Page</h1>
-       <h1 className=" text-blue-500">Home Page</h1>
-       <h1 className=" text-blue-500">Home Page</h1>
-       <h1 className=" text-blue-500">Home Page</h1>
-       <h1 className=" text-blue-500">Home Page</h1>
-       <h1 className=" text-blue-500">Home Page</h1>
       
-       <h1 className=" text-blue-500">Home Page</h1>
-       <h1 className=" text-blue-500">Home Page</h1>
 
         </>
     )
