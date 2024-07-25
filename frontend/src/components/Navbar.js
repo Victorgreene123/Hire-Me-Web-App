@@ -38,7 +38,7 @@ const Navbar = (props) => {
         </div>
         <div className="hidden lg:flex items-center flex-grow">
           <Link to="/find-professionals" className="ml-10 text-[1rem]">
-            <span className="text-outline text-stroke-purple open-sans-normal">Find Professionals</span>
+            <span className="text-white open-sans-normal">Find Professionals</span>
           </Link>
           <div className="gradient-border relative w-50 max-w-md mx-auto">
             <input
@@ -51,7 +51,7 @@ const Navbar = (props) => {
             </span>
           </div>
           <Link to="/find-professionals" className="mr-8 text-[1rem]">
-            <span className="text-outline text-stroke-purple open-sans-normal">Log in</span>
+            <span className="text-white open-sans-normal">Log in</span>
           </Link>
           <button className="background-gradient p-2 px-4 rounded-full  text-white text-[1rem]">
             Sign up
