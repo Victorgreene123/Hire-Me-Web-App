@@ -1,14 +1,16 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "../components/Navbar";
 import '../customstyles.css'
+import logo from '../Assets/hiremelogo.png'
+import image from '../Assets/hireme original 2_010322.jpg'
 import heroimage1 from '../Assets/heroimage_1.jpg'
 import heroimage2 from '../Assets/heroimage_2.jpg'
 import heroimage3 from '../Assets/heroimage_3.jpg'
 import heroimage4 from '../Assets/heroimage_4.jpg'
 import heroimage5 from '../Assets/heroimage_5.jpg'
 import pageui from '../Assets/pageui.png'
-import flyer from '../Assets/hireme original 1_010357.jpg'
-import { FaEdit, FaHandshake, FaHandshakeAltSlash, FaLocationArrow, FaMapMarked, FaMapMarkedAlt, FaMapMarker, FaMapMarkerAlt, FaMapPin, FaMedal, FaSearchLocation } from 'react-icons/fa'; // Font Awesome Medal icon
+import flyer from '../Assets/HIREME FLYER_010334.jpg'
+import { FaDollarSign, FaEdit, FaHandshake, FaHandshakeAltSlash, FaLocationArrow, FaMapMarked, FaMapMarkedAlt, FaMapMarker, FaMapMarkerAlt, FaMapPin, FaMedal, FaMoneyBill, FaMoneyBillWave, FaSearchLocation } from 'react-icons/fa'; // Font Awesome Medal icon
 import { MdStar } from 'react-icons/md';
 const Home =() =>{
     const [isFixed, setIsFixed] = useState(false);
@@ -50,8 +52,8 @@ const Home =() =>{
         </div>
         {/* <div className=" h-full bg-[#340352] opacity-20 absolute top-0 left-0 w-full"></div> */}
        </div>
-      
-       <div className="lg:flex block w-full p-3 lg:px-20 h-auto  lg:h-[70vh] gap-5 lg:mt-10  ">
+      <div className="px-5">
+       <div className="lg:flex  block w-full p-3 lg:px-10  h-auto  lg:h-[70vh] gap-5 lg:mt-10  ">
         <div className="border-[#505168] bg-[#f5f8f5] rounded-md flex  justify-center h-full lg:w-1/2 mb-5 p-2 items-center">
         <img className="w-full  " src={pageui}></img>
         </div>
@@ -99,12 +101,46 @@ const Home =() =>{
        {/* NEXT SECTION */}
 
 
-       <div className="lg:flex block w-full p-3 lg:px-20 h-auto  lg:h-[60vh] gap-5 lg:mt-0  ">
-        <div className="border-[#505168] rounded-md  h-full lg:w-2/5 mb-5 p-2 items-center">
-        <img className="w-full" src={pageui}></img>
+       <div className=" bg-[#f9f9f9] mx-auto block w-full  rounded-lg lg:flex  lg:pl-12   h-auto   gap-5 mt-5  ">
+        <div className="border-[#505168]  lg:py-5 rounded-md  h-full lg:w-4/5 mb-5 p-2 items-center">
+        <div className="px-4">
+        <h1 className="tracking-tighter lg:text-6xl font-semibold text-[1.8rem] text-left lg:text-left leading-tighter">Why you should use hireme</h1>
+        <h3 className="flex items-center mt-2 p-2 gap-4" >
+         
+         <FaDollarSign className="text-2xl font-thin"/>
+         <span className="block">
+             <h4 className="lg:text-3xl  text-1xl font-semibold">Increase your Earning</h4>
+             <h4 className="text-sm">Register and view various talent</h4>
+         </span>
+
+     </h3>
+
+     <h3 className="flex items-center mt-2 p-2 gap-4" >
+         
+         <FaHandshakeAltSlash className="text-2xl font-thin"/>
+         <span className="block">
+             <h4 className="lg:text-3xl  text-1xl font-semibold">Work at your own time</h4>
+             <h4 className="text-sm">Register and view various talent</h4>
+         </span>
+
+     </h3>
+
+     <h3 className="flex items-center mt-2 p-2 gap-4" >
+         
+         <FaDollarSign className="text-2xl font-thin"/>
+         <span className="block">
+             <h4 className="lg:text-3xl  text-1xl font-normal">Increase your Earning</h4>
+             <h4 className="text-sm">Register and view various talent</h4>
+         </span>
+
+     </h3>
+</div>
         </div>
        
-        <div className=" h-full lg:w-3/4 lg:pt-5 mx-auto w-full px-2">
+        <div className="hero h-full lg:w-2/5   mx-auto w-full">
+        <img src={flyer} className="w-full "></img>
+        </div>
+        
         </div>
         
         </div>

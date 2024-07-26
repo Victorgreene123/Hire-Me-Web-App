@@ -44,7 +44,7 @@ const Navbar = (props) => {
             <input
               type="text"
               placeholder="Search"
-              className="input-field w-full pl-4 p-1 pr-12 border border-gray-300 rounded-full text-white text-sm"
+              className="input-field w-full pl-4 p-2 pr-12 border border-gray-300 rounded-full text-white text-sm"
             />
             <span className="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
               <i className="fas fa-search text-white"></i> {/* Font Awesome icon */}
