@@ -51,50 +51,63 @@ const Home =() =>{
         {/* <div className=" h-full bg-[#340352] opacity-20 absolute top-0 left-0 w-full"></div> */}
        </div>
       
-       <div className="lg:flex block w-full p-3 lg:px-5 h-auto  lg:h-[60vh] gap-5 lg:mt-0  ">
-        <div className="border-[#505168] rounded-md  h-full lg:w-2/5 mb-5 p-2 items-center">
-        <img className="w-full" src={pageui}></img>
+       <div className="lg:flex block w-full p-3 lg:px-20 h-auto  lg:h-[70vh] gap-5 lg:mt-10  ">
+        <div className="border-[#505168] bg-[#f5f8f5] rounded-md flex  justify-center h-full lg:w-1/2 mb-5 p-2 items-center">
+        <img className="w-full  " src={pageui}></img>
         </div>
        
         <div className=" h-full lg:w-3/4 lg:pt-5 mx-auto w-full px-2">
-        <h1 className="tracking-tighter  lg:text-5xl font-semibold text-[2.5rem] text-left lg:text-left leading-tight">Up your work game, <span className="text-outline-big text-outline text-stroke-purple ">it’s easy</span></h1>
-        <h3 className="flex items-start mt-2 p-2 gap-4" >
+        <h1 className="tracking-tighter  lg:text-5xl font-semibold text-[1.8rem] text-left lg:text-left leading-tight">Hire the best pros ,<span className="text-outline-lg text-outline text-stroke-purple ">it’s easy</span></h1>
+        <h3 className="flex items-center mt-2 p-2 gap-4" >
          
             <FaEdit  className="text-2xl font-thin"/>
             <span className="block">
-                <h4 className="text-2xl font-semibold">No cost to join</h4>
-                <h4>Register and view various talent</h4>
+                <h4 className="lg:text-2xl  text-1xl font-semibold">No cost to join</h4>
+                <h4 className="text-sm">Register and view various talent</h4>
             </span>
 
         </h3>
 
-        <h3 className="flex items-start mt-2 p-2 gap-4" >
+        <h3 className="flex items-center mt-2 p-2 gap-4" >
         <FaHandshake className="text-2xl font-thin" />
 
             <span className="block">
-                <h4 className="text-2xl font-semibold">Work with the best</h4>
-                <h4>Explore our list of professionals</h4>
+                <h4 className="lg:text-2xl  text-1xl font-semibold">Work with the best</h4>
+                <h4 className="text-sm">Explore our list of professionals</h4>
             </span>
 
         </h3>
 
-        <h3 className="flex items-start mt-2 p-2 gap-4" >
+        <h3 className="flex items-center mt-2 p-2 gap-4" >
             {/* <i className=" text-2xl "></i> */}
           
           <FaMapMarkerAlt className="text-2xl font-thin" />
 
             
             
-            <span className="block">
-                <h4 className="text-2xl font-semibold">Closest to you</h4>
-                <h4>Register and view various talent</h4>
+            <span className="block ">
+                <h4 className="lg:text-2xl  text-1xl font-semibold">Closest to you</h4>
+                <h4 className="text-sm">Register and view various talent</h4>
             </span>
 
         </h3>
+        <button className="background-gradient py-5 px-10  lg:w-1/3 w-full rounded-full  text-white text-1xl lg:text-1xl lg:mt-5 mt-12 ">Sign up for free</button>
 </div>
 
         
        </div>
+       {/* NEXT SECTION */}
+
+
+       <div className="lg:flex block w-full p-3 lg:px-20 h-auto  lg:h-[60vh] gap-5 lg:mt-0  ">
+        <div className="border-[#505168] rounded-md  h-full lg:w-2/5 mb-5 p-2 items-center">
+        <img className="w-full" src={pageui}></img>
+        </div>
+       
+        <div className=" h-full lg:w-3/4 lg:pt-5 mx-auto w-full px-2">
+        </div>
+        
+        </div>
 
 
      
