@@ -12,7 +12,7 @@ import picture1 from '../Assets/agreement-concept-illustration.png'
 import picture2 from '../Assets/searchpeople.png'
 import pageui from '../Assets/pageui.png'
 import flyer from '../Assets/HIREME FLYER_010334.jpg'
-import { FaClock, FaDollarSign, FaEdit, FaHandshake, FaHandshakeAltSlash, FaLocationArrow, FaMapMarked, FaMapMarkedAlt, FaMapMarker, FaMapMarkerAlt, FaMapPin, FaMedal, FaMoneyBill, FaMoneyBillWave, FaPeopleCarry, FaSearchLocation, FaUserFriends, FaUserPlus, FaUsers } from 'react-icons/fa'; // Font Awesome Medal icon
+import { FaBolt, FaCheck, FaClock, FaDollarSign, FaEdit, FaHandshake, FaHandshakeAltSlash, FaLocationArrow, FaMapMarked, FaMapMarkedAlt, FaMapMarker, FaMapMarkerAlt, FaMapPin, FaMedal, FaMoneyBill, FaMoneyBillWave, FaPeopleCarry, FaSearchLocation, FaUserFriends, FaUserPlus, FaUsers } from 'react-icons/fa'; // Font Awesome Medal icon
 import { MdStar } from 'react-icons/md';
 const Home =() =>{
     const [isFixed, setIsFixed] = useState(false);
@@ -64,12 +64,12 @@ const Home =() =>{
         </div>
        
         <div className=" h-full lg:w-3/4 lg:pt-5 mx-auto w-full px-2">
-        <h1 className="tracking-tighter  lg:text-5xl font-semibold text-[1.8rem] text-left lg:text-left leading-tight">Hire the best pros ,<span className="text-outline-lg text-outline text-stroke-purple ">it’s easy</span></h1>
+        <h1 className="tracking-tighter  lg:text-5xl font-semibold text-[1.8rem] text-left lg:text-left leading-tight text-[#340352] ">Hire the best pros ,<span className="text-outline-lg text-outline text-stroke-purple ">it’s easy</span></h1>
         <h3 className="flex items-center mt-2 p-2 gap-4" >
          
             <FaEdit  className="text-2xl font-thin"/>
             <span className="block">
-                <h4 className="lg:text-2xl  text-1xl font-semibold">No cost to join</h4>
+                <h4 className="lg:text-2xl  text-1xl font-semibold text-[#340352] ">No cost to join</h4>
                 <h4 className="text-sm">Register and browse through a variety of talented professionals at no cost.</h4>
             </span>
 
@@ -79,7 +79,7 @@ const Home =() =>{
         <FaHandshake className="text-2xl font-thin" />
 
             <span className="block">
-                <h4 className="lg:text-2xl  text-1xl font-semibold">Work with the best</h4>
+                <h4 className="lg:text-2xl  text-1xl font-semibold text-[#340352]">Work with the best</h4>
                 <h4 className="text-sm">Explore our curated list of top professionals in your area.</h4>
             </span>
 
@@ -93,7 +93,7 @@ const Home =() =>{
             
             
             <span className="block ">
-                <h4 className="lg:text-2xl  text-1xl font-semibold">Sign Up for Free</h4>
+                <h4 className="lg:text-2xl  text-1xl font-semibold text-[#340352]">Sign Up for Free</h4>
                 <h4 className="text-sm">Start connecting with experts who can help you achieve your goals.</h4>
             </span>
 
@@ -106,15 +106,15 @@ const Home =() =>{
        {/* NEXT SECTION */}
 
 
-       <div className=" bg-[#f9f9f9] mx-auto block w-full  rounded-lg lg:flex  lg:pl-12   h-auto   gap-5 mt-5  ">
+       <div className=" bg-[#FDF7FD] mx-auto block w-full  rounded-lg lg:flex  lg:pl-12   h-auto   gap-5 mt-5  ">
         <div className="border-[#505168]  lg:py-5 rounded-md  h-full lg:w-4/5 mb-5 p-2 items-center">
         <div className="px-3">
-        <h1 className="tracking-tighter lg:text-6xl font-semibold text-[2.2rem] text-left lg:text-left leading-tighter">Why you should use hireme</h1>
+        <h1 className="tracking-tighter lg:text-6xl font-semibold text-[2.2rem] text-left lg:text-left leading-tighter text-[#340352]">Why you should use hireme</h1>
         <h3 className="flex items-center mt-2 p-2 gap-4" >
          
          <FaDollarSign className="text-2xl font-thin"/>
          <span className="block">
-             <h4 className="lg:text-3xl  text-1xl font-normal">Increase your Earning</h4>
+             <h4 className="lg:text-3xl  text-1xl font-normal text-[#340352]">Increase your Earning</h4>
              <h4 className="text-sm">Find opportunities that allow you to earn more by working with the best clients.</h4>
          </span>
 
@@ -124,7 +124,7 @@ const Home =() =>{
          
          <FaClock className="text-2xl font-thin"/>
          <span className="block">
-             <h4 className="lg:text-3xl  text-1xl font-normal">Work at your own time</h4>
+             <h4 className="lg:text-3xl  text-1xl font-normal text-[#340352]">Work at your own time</h4>
              <h4 className="text-sm">Enjoy the flexibility of working on your schedule, making it easier to balance work and life.</h4>
          </span>
 
@@ -134,7 +134,7 @@ const Home =() =>{
          
          <FaUsers className="text-2xl font-thin"/>
          <span className="block">
-             <h4 className="lg:text-3xl  text-1xl font-normal">Expand Your Reach</h4>
+             <h4 className="lg:text-3xl  text-1xl font-normal text-[#340352]">Expand Your Reach</h4>
              <h4 className="text-sm"> Get connected with clients seeking exactly what you offer.</h4>
          </span>
 
@@ -147,10 +147,43 @@ const Home =() =>{
         </div>
         
         </div>
-        
+
+       <div className=" bg-[#F3E5F2] mx-auto block w-full  rounded-lg lg:flex  lg:pl-12   h-auto   gap-5 mt-5  ">
+
+<div className="border-[#505168]  lg:py-5 rounded-md  h-full lg:w-4/5 mx-auto mb-5 p-2 items-center">
+        <div className="px-3">
+        <h1 className="tracking-tighter lg:text-6xl font-semibold text-[1.8rem] text-center lg:text-left leading-tighter text-[#340352]">Sign Up for Free</h1>
+        <h3 className="flex items-center mt-2 p-2 gap-4" >
+         
+         <FaCheck className="text-3xl font-thin text-green-600"/>
+         <span className="block">
+             <h4 className="lg:text-3xl  text-1xl font-normal text-[#340352]">It's Quick and Simple</h4>
+             <h4 className="text-sm" > Register in minutes and start browsing available professionals.</h4>
+ 
+         </span>
+
+     </h3>
+
+     <h3 className="flex items-center mt-2 p-2 gap-4" >
+         
+         <FaBolt className="text-3xl font-thin text-green-600"/>
+         <span className="block">
+             <h4 className="lg:text-3xl  text-1xl font-normal text-[#340352]">Immediate Access</h4>
+             <h4 className="text-sm" > No delays – find talent or gigs right away, without any hidden costs.</h4>
+ 
+         </span>
+
+     </h3>
+     <button className="background-gradient py-5 px-10  lg:w-1/3 w-full rounded-full  text-white text-1xl lg:text-1xl lg:mt-5 mt-12 ">Sign up now</button>
+
+     
+</div>
+</div>
+
+</div> 
         </div>
 
-
+        
      
         </>
     )
