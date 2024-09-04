@@ -5,9 +5,10 @@ import Footer from "./footer";
 const Layout = () =>{
     return(
         <>
-
+    
     <Outlet />
-    <Footer />
+    {/* <Footer /> */}
+   
     </>
     )
 }

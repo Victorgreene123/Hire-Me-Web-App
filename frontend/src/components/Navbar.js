@@ -24,14 +24,14 @@ const Navbar = (props) => {
   
     return (
       <nav
-        className={`flex w-full h-[65px] lg:px-5 p-3 ${props.isHomePage ? isFixed ? 'bg-[#340352]' : 'bg-transparent' : 'bg-white'} text-[18px] items-center ${
+        className={`flex w-full h-[65px] lg:px-5 p-3 ${props.isHomePage ? isFixed ? 'bg-[#340352]' : 'bg-transparent' : 'bg-[#340352]'} text-[18px] items-center ${
           isFixed ? 'fixed top-0 left-0 z-50 shadow-lg bg-[#340352]' : ''
         }`}
       >
         <i className={`fas fa-bars ${ isFixed ? 'text-white' : 'text-white'} lg:hidden`}></i>
         <img src={logo} alt="Logo" className="w-24 h-auto" />
         <div className="absolute flex items-center lg:hidden right-4">
-          <Link to="/find-professionals" className="mr-3 text-[1rem]">
+          <Link to="/login" className="mr-3 text-[1rem]">
             <span className="text-white open-sans-normal">Log in</span>
           </Link>
           <i className={`fas fa-search ${ isFixed ? 'text-white' : 'text-white'}`}></i>
@@ -50,7 +50,7 @@ const Navbar = (props) => {
               <i className="fas fa-search text-white"></i> {/* Font Awesome icon */}
             </span>
           </div>
-          <Link to="/find-professionals" className="mr-8 text-[1rem]">
+          <Link to="/login" className="mr-8 text-[1rem]">
             <span className="text-white open-sans-normal">Log in</span>
           </Link>
           <button className="background-gradient p-2 px-4 rounded-full  text-white text-[1rem]">

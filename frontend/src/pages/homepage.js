@@ -40,7 +40,7 @@ const Home =() =>{
        
         <div className="   w-[100%] mx-auto lg:flex block gap-10 pl-5 pr-2 lg:pl-5 lg:pr-0 lg:mt-12 ">
             
-            <div className="relative lg:w-1/2 lg:px-2  mx-auto lg:mx-0 w-full lg:pb-0 pb-5">
+            <div className="relative lg:w-3/5 lg:px-10  mx-auto lg:mx-0 w-full lg:pb-0 pb-5">
             <img className="w-[68%]  mx-auto h-full lg:hidden rounded-full" src={picture1} alt="" />
      
 
@@ -152,7 +152,7 @@ const Home =() =>{
 
 <div className="border-[#505168]  lg:py-5 rounded-md  h-full lg:w-4/5 mx-auto mb-5 p-2 items-center">
         <div className="px-3">
-        <h1 className="tracking-tighter lg:text-6xl font-semibold text-[1.8rem] text-center lg:text-left leading-tighter text-[#340352]">Sign Up for Free</h1>
+        <h1 className="tracking-tighter lg:text-6xl font-semibold text-[1.7rem] text-center lg:text-left leading-tighter text-[#340352]">Sign Up for Free</h1>
         <h3 className="flex items-center mt-2 p-2 gap-4" >
          
          <FaCheck className="text-3xl font-thin text-green-600"/>
@@ -166,7 +166,8 @@ const Home =() =>{
 
      <h3 className="flex items-center mt-2 p-2 gap-4" >
          
-         <FaBolt className="text-3xl font-thin text-green-600"/>
+     <FaCheck className="text-3xl font-thin text-green-600"/>
+
          <span className="block">
              <h4 className="lg:text-3xl  text-1xl font-normal text-[#340352]">Immediate Access</h4>
              <h4 className="text-sm" > No delays – find talent or gigs right away, without any hidden costs.</h4>
