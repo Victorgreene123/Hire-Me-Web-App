@@ -14,6 +14,7 @@ import pageui from '../Assets/pageui.png'
 import flyer from '../Assets/HIREME FLYER_010334.jpg'
 import { FaBolt, FaCheck, FaClock, FaDollarSign, FaEdit, FaHandshake, FaHandshakeAltSlash, FaLocationArrow, FaMapMarked, FaMapMarkedAlt, FaMapMarker, FaMapMarkerAlt, FaMapPin, FaMedal, FaMoneyBill, FaMoneyBillWave, FaPeopleCarry, FaSearchLocation, FaUserFriends, FaUserPlus, FaUsers } from 'react-icons/fa'; // Font Awesome Medal icon
 import { MdStar } from 'react-icons/md';
+import Footer from "../components/footer";
 const Home =() =>{
     const [isFixed, setIsFixed] = useState(false);
   
@@ -184,7 +185,7 @@ const Home =() =>{
 </div> 
         </div>
 
-        
+        <Footer />
      
         </>
     )
