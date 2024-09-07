@@ -59,3 +59,19 @@
     background-position: center;
    
   }
+  .spinner-icon {
+    font-size: 1.5rem; /* Adjust size as needed */
+    animation: spin 1s linear infinite; /* Apply spin animation */
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  .spinner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full page height */
+  }

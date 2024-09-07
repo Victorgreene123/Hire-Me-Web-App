@@ -53,9 +53,9 @@ const Navbar = (props) => {
           <Link to="/login" className="mr-8 text-[1rem]">
             <span className="text-white open-sans-normal">Log in</span>
           </Link>
-          <button className="background-gradient p-2 px-4 rounded-full  text-white text-[1rem]">
+          <Link to="/signup"> <button className="background-gradient p-2 px-4 rounded-full  text-white text-[1rem]">
             Sign up
-          </button>
+          </button></Link>
         </div>
       </nav>
     );
