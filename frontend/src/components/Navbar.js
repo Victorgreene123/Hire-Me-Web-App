@@ -28,7 +28,7 @@ const Navbar = (props) => {
           isFixed ? 'fixed top-0 left-0 z-50 shadow-lg bg-[#340352]' : ''
         }`}
       >
-        <i className={`fas fa-bars ${ isFixed ? 'text-white' : 'text-white'} lg:hidden`}></i>
+        <i className={`fas fa-bars ${ isFixed ? 'text-white' : 'text-white'} lg:hidden`} ></i>
         <img src={logo} alt="Logo" className="w-24 h-auto" />
         <div className="absolute flex items-center lg:hidden right-4">
           <Link to="/login" className="mr-3 text-[1rem]">
@@ -36,26 +36,17 @@ const Navbar = (props) => {
           </Link>
           <i className={`fas fa-search ${ isFixed ? 'text-white' : 'text-white'}`}></i>
         </div>
-        <div className="hidden lg:flex items-center flex-grow">
+        <div className="hidden lg:flex items-center flex-grow justify-between">
           <Link to="/find-professionals" className="ml-10 text-[1rem]">
             <span className="text-white open-sans-normal">Find Professionals</span>
           </Link>
-          <div className="gradient-border relative w-50 max-w-md mx-auto">
-            <input
-              type="text"
-              placeholder="Search"
-              className="input-field w-full pl-4 p-2 pr-12 border border-gray-300 rounded-full text-white text-sm"
-            />
-            <span className="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
-              <i className="fas fa-search text-white"></i> {/* Font Awesome icon */}
-            </span>
-          </div>
+         <div className="flex items-center">
           <Link to="/login" className="mr-8 text-[1rem]">
             <span className="text-white open-sans-normal">Log in</span>
           </Link>
           <Link to="/signup"> <button className="background-gradient p-2 px-4 rounded-full  text-white text-[1rem]">
             Sign up
-          </button></Link>
+          </button></Link></div>
         </div>
       </nav>
     );

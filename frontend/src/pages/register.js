@@ -86,7 +86,7 @@ const Signup = () => {
                                 />
                             </div>
                             <div className="w-full mb-4">
-                                <label>Phone Number</label>
+                                <label>WhatsApp Number</label>
                                 <input
                                     name="phoneNumber"
                                     placeholder="081xxxxxxxx"

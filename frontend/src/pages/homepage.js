@@ -15,6 +15,7 @@ import flyer from '../Assets/HIREME FLYER_010334.jpg'
 import { FaBolt, FaCheck, FaClock, FaDollarSign, FaEdit, FaHandshake, FaHandshakeAltSlash, FaLocationArrow, FaMapMarked, FaMapMarkedAlt, FaMapMarker, FaMapMarkerAlt, FaMapPin, FaMedal, FaMoneyBill, FaMoneyBillWave, FaPeopleCarry, FaSearchLocation, FaUserFriends, FaUserPlus, FaUsers } from 'react-icons/fa'; // Font Awesome Medal icon
 import { MdStar } from 'react-icons/md';
 import Footer from "../components/footer";
+import { Link } from "react-router-dom";
 const Home =() =>{
     const [isFixed, setIsFixed] = useState(false);
   
@@ -39,17 +40,17 @@ const Home =() =>{
 
         <Navbar isHomePage={true}/>
        
-        <div className="   w-[100%] mx-auto lg:flex block gap-10 pl-5 pr-2 lg:pl-5 lg:pr-0 lg:mt-12 ">
+        <div className="   w-[100%] mx-auto lg:flex block gap-10 pl-5 lg:py-0 py-20 pr-2 lg:pl-5 lg:pr-0 lg:mt-12 ">
             
             <div className="relative lg:w-3/5 lg:px-10  mx-auto lg:mx-0 w-full lg:pb-0 pb-5">
-            <img className="w-[68%]  mx-auto h-full lg:hidden rounded-full" src={picture1} alt="" />
+            {/* <img className="w-[68%]  mx-auto h-full lg:hidden rounded-full" src={picture1} alt="" /> */}
      
 
                 <h1 className="text-white  lg:text-6xl font-semibold text-4xl text-left lg:text-left z-10 lg:mt-0"> Your Trusted Source for <span className="text-outline-lg text-outline text-stroke-purple "> Professional Services</span></h1>
                 <p className="text-white lg:w-1/2 lg:text-1xl mt-3">Find and Hire Reliable Professionals</p>
-                <button className="background-gradient py-5 px-20  rounded-full  text-white text-1xl lg:text-1xl lg:mt-10 mt-12 ">
+                <Link to='/signup' ><button className="background-gradient py-5 px-20  rounded-full  text-white text-1xl lg:text-1xl lg:mt-10 mt-12 ">
             Get Started
-          </button>
+          </button></Link>
             </div>
             <div className=" lg:w-2/5 w-full mx-auto px-10  gap-5 justify-center  ">
             <img className="w-full lg:block hidden" src={picture1} alt="" />
@@ -99,7 +100,7 @@ const Home =() =>{
             </span>
 
         </h3>
-        <button className="background-gradient py-5 px-10  lg:w-1/3 w-full rounded-full  text-white text-1xl lg:text-1xl lg:mt-5 mt-12 ">Sign up for free</button>
+       <Link to='/signup'><button className="background-gradient py-5 px-10  lg:w-1/3 w-full rounded-full  text-white text-1xl lg:text-1xl lg:mt-5 mt-12 ">Sign up for free</button></Link> 
 </div>
 
         
@@ -176,7 +177,7 @@ const Home =() =>{
          </span>
 
      </h3>
-     <button className="background-gradient py-5 px-10  lg:w-1/3 w-full rounded-full  text-white text-1xl lg:text-1xl lg:mt-5 mt-12 ">Sign up now</button>
+     <Link to='/signup'><button className="background-gradient py-5 px-10  lg:w-1/3 w-full rounded-full  text-white text-1xl lg:text-1xl lg:mt-5 mt-12 ">Sign up now</button></Link>
 
      
 </div>

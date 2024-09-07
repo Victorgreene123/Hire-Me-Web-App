@@ -13,10 +13,10 @@ const Footer = () => {
 
         {/* Navigation Links */}
         <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8">
-          <a href="#" className="hover:text-gray-300">Find Professionals</a>
+          <Link to='/find-professionals' className="hover:text-gray-300">Find Professionals</Link>
           <Link  className="hover:text-gray-300">Search</Link>
           <Link to='/login' className="hover:text-gray-300">Log in</Link>
-          <a href="#" className="hover:text-gray-300">Sign up</a>
+         <Link to='/signup' className="hover:text-gray-300">Sign up</Link>
         </div>
       </div>
 
