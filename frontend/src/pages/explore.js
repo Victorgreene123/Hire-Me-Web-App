@@ -1,8 +1,8 @@
 import React, { useRef, useState } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/footer";
-import { FaGripLinesVertical } from "react-icons/fa";
-
+import { FaEllipsisV, FaGripLinesVertical } from "react-icons/fa";
+import profile from '../Assets/profile.png'
 const Explore = () => {
     const jobs = [
        "Electrician", "Painter", "Car Mechanic", "Generator Repairer", "Plumber",
@@ -89,7 +89,7 @@ const Explore = () => {
             <Navbar />
             <div className="bg-white w-full p-2">
                 <div className="w-full py-6 border-b">
-                    <div className="relative rounded-md lg:w-3/5 mx-auto lg:flex block w-[90%] items-center  border border-grey-600">
+                    <div className="relative rounded-md lg:w-3/5 mx-auto lg:flex block w-[95%] items-center  border border-grey-600">
                         {/* Job Search */}
                         <div className="relative lg:w-1/2 w-full block" ref={jobSearchBoxRef}>
                             <div className="relative w-full items-center flex lg:border-b-0 border-b">
@@ -155,6 +155,76 @@ const Explore = () => {
                         </div>
                     </div>
                 </div>
+
+                <div className="flex lg:p-10 lg:px-14 mt-4 gap-2" >
+                        <div className="w-[95%] lg:w-1/2 mx-auto lg:mx-0">
+                          <div className=" w-full p-1 px-2 border mb-2 rounded-md">
+                            
+                            <div className="flex items-center  justify-between">
+                                <div className="flex items-center gap-4">
+                                <img src={profile} className="w-9"></img>
+                                <div className="block text-[0.8rem] py-1 ">
+                                    <h2>John Doe</h2>
+                                    <h3 className="text-gray-400">Tailor</h3>
+                                </div></div>
+                                <FaEllipsisV className="text-gray-400"/>
+                            </div>
+
+                            <div className="p-1">
+                            <p className="text-sm ">I am a certified Tailor.I am a certified Tailor.I am a certified Tailor.I am a certified Tailor</p>
+                         </div> 
+                         
+                         </div>
+
+                         <div className=" w-full p-1 px-2 border mb-2 rounded-md">
+                            
+                            <div className="flex items-center  justify-between">
+                                <div className="flex items-center gap-4">
+                                <img src={profile} className="w-9"></img>
+                                <div className="block text-[0.8rem] py-1 ">
+                                    <h2>John Doe</h2>
+                                    <h3 className="text-gray-400">Tailor</h3>
+                                </div></div>
+                                <FaEllipsisV className="text-gray-400"/>
+                            </div>
+
+                            <div className="p-1">
+                            <p className="text-sm ">I am a certified Tailor.I am a certified Tailor.I am a certified Tailor.I am a certified Tailor</p>
+                         </div> 
+                         
+                         </div>
+
+                         <div className=" w-full p-1 px-2 border mb-2 rounded-md">
+                            
+                            <div className="flex items-center  justify-between">
+                                <div className="flex items-center gap-4">
+                                <img src={profile} className="w-9"></img>
+                                <div className="block text-[0.8rem] py-1 ">
+                                    <h2>John Doe</h2>
+                                    <h3 className="text-gray-400">Tailor</h3>
+                                </div></div>
+                                <FaEllipsisV className="text-gray-400"/>
+                            </div>
+
+                            <div className="p-1">
+                            <p className="text-sm ">I am a certified Tailor.I am a certified Tailor.I am a certified Tailor.I am a certified Tailor</p>
+                         </div> 
+                         
+                         </div>
+                         
+                 
+
+                        </div>
+                        <div className="hidden lg:flex items-center">
+      <div className="w-px h-full bg-gray-300"></div>
+    </div>
+
+                            <div className="lg:block hidden border border-black-500 rounded-md p-5 h-auto w-1/2">
+
+                            </div>
+                      
+                </div>
+
             </div>
             <Footer />
         </>
