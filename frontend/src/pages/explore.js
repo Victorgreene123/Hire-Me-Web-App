@@ -1,8 +1,9 @@
 import React, { useRef, useState } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/footer";
-import { FaEllipsisV, FaGripLinesVertical } from "react-icons/fa";
+import { FaBookmark, FaCircle, FaEllipsisV, FaGripLinesVertical, FaHeart, FaSpinner, FaStar } from "react-icons/fa";
 import profile from '../Assets/profile.png'
+import User from "../components/User";
 const Explore = () => {
     const jobs = [
        "Electrician", "Painter", "Car Mechanic", "Generator Repairer", "Plumber",
@@ -20,6 +21,7 @@ const Explore = () => {
     const [jobQuery, setJobQuery] = useState("");
     const [locationQuery, setLocationQuery] = useState("");
     const [locationSearchResults, setLocationSearchResults] = useState([]);
+    const [isUserclicked , setisUserClicked] = useState(false)
 
     const jobSearchBoxRef = useRef(null);
     const locationSearchBoxRef = useRef(null);
@@ -29,6 +31,9 @@ const Explore = () => {
         setJobQuery(item); // Set the selected job in the input
         setIsJobSearchResults(false); // Hide search results after selection
     };
+    const clickUser = () =>{
+        setisUserClicked(true)
+    }
 
     // Select Location Function
     const selectLocation = (item) => {
@@ -83,6 +88,67 @@ const Explore = () => {
             }
         }, 1000); // Small delay to allow click event
     };
+    const [openDropdown, setOpenDropdown] = useState(null);
+
+    const toggleOpen = (userId) => {
+      if (openDropdown === userId) {
+        setOpenDropdown(null); // Close the currently opened dropdown
+      } else {
+        setOpenDropdown(userId); // Open the clicked dropdown
+      }
+    };
+    const [isSearchLoading , setisSearchLoading] = useState(false)
+    const handleSearch = () => {
+        setisSearchLoading(true);
+        setTimeout(() => {
+            setisSearchLoading(false);
+        }, 2000);
+    };
+    
+    // Example list of users
+    const users = [
+                {
+                    userId:1,
+                    name:"John Doe",
+                    image : "profile1.jpg",
+                    location:"Ikeja",
+                    rating : "4.5",
+                    bio:"I am a hardworking barber",
+                    occupation:"Hair stylist",
+                    whatsapp:"09030674788",
+                                }, 
+                {
+                    userId:2,
+                    name:"Daniel Adeboni",
+                    image : "profile2.jpg",
+                    location:"Ikeja",
+                    rating : "-",
+                    bio:"I am a hardworking barber",
+                    occupation:"Hair stylist",
+                    whatsapp:"09030674788",
+                                }, 
+                {
+                    userId:3,
+                name:"Lanre Ajakaye",
+                image : "profile3.jpg",
+                location:"Ikeja",
+                rating : "3.7",
+                bio:"I am a hardworking barber",
+                occupation:"Hair stylist",
+                whatsapp:"2348066245005",
+
+                }, 
+                {
+                    userId:4,
+                    name:"John Ubah",
+                    image : "profile4.jpg",
+                    location:"Ikeja",
+                    rating : "4",
+                    bio:"I am a hardworking barber",
+                    occupation:"Hair stylist",
+                    whatsapp:"09030674788",
+                                }
+            ];
 
     return (
         <>
@@ -132,7 +198,7 @@ const Explore = () => {
                                     placeholder="Location"
                                     onBlur={handleLocationBlur}
                                     onFocus={() => setIsLocationSearchResults(true)}
-                                    className="w-full pl-14 py-4 pr-3 border-[#340352] focus:border-b-2 focus:border-b-[#340352]"
+                                    className="lg:border-b-0  border-b    w-full pl-14 py-4 pr-3 border-[#340352] focus:border-b-2 focus:border-b-[#340352]"
                                     onChange={(e) => handleLocationChange(e)}
                                 />
                             </div>
@@ -153,64 +219,33 @@ const Explore = () => {
                                 </div>
                             )}
                         </div>
+                        <button  onClick={handleSearch}  className="text-white text-center mt-4 lg:mt-0 bg-[#340352] border lg:w-1/3 w-full mx-auto rounded-md py-3 flex justify-center items-center"> {isSearchLoading ? <FaSpinner className="spinner-icon text-center" /> : "Search"}</button>
                     </div>
+
+
                 </div>
 
                 <div className="flex lg:p-10 lg:px-14 mt-4 gap-2" >
-                        <div className="w-[95%] lg:w-1/2 mx-auto lg:mx-0">
-                          <div className=" w-full p-1 px-2 border mb-2 rounded-md">
-                            
-                            <div className="flex items-center  justify-between">
-                                <div className="flex items-center gap-4">
-                                <img src={profile} className="w-9"></img>
-                                <div className="block text-[0.8rem] py-1 ">
-                                    <h2>John Doe</h2>
-                                    <h3 className="text-gray-400">Tailor</h3>
-                                </div></div>
-                                <FaEllipsisV className="text-gray-400"/>
-                            </div>
+                        <div className="w-[95%] lg:w-1/2 lg:overflow-y-auto lg:max-h-[80vh] mx-auto lg:mx-0">
+                        {users.map((user) => (
+        <User
+          key={user.userId}
+          userId={user.userId}
+          isOpen={openDropdown === user.userId}
+          isUserclicked = {isUserclicked}
+          clickUser = {clickUser}
+          toggleOpen={toggleOpen}
+          image={user.image}
+          name={user.name}
+          occupation={user.occupation}
+          location={user.location}
+          rating={user.rating}
+          bio={user.bio}
+          whatsapp={user.whatsapp}
+        />
+      ))}
 
-                            <div className="p-1">
-                            <p className="text-sm ">I am a certified Tailor.I am a certified Tailor.I am a certified Tailor.I am a certified Tailor</p>
-                         </div> 
                          
-                         </div>
-
-                         <div className=" w-full p-1 px-2 border mb-2 rounded-md">
-                            
-                            <div className="flex items-center  justify-between">
-                                <div className="flex items-center gap-4">
-                                <img src={profile} className="w-9"></img>
-                                <div className="block text-[0.8rem] py-1 ">
-                                    <h2>John Doe</h2>
-                                    <h3 className="text-gray-400">Tailor</h3>
-                                </div></div>
-                                <FaEllipsisV className="text-gray-400"/>
-                            </div>
-
-                            <div className="p-1">
-                            <p className="text-sm ">I am a certified Tailor.I am a certified Tailor.I am a certified Tailor.I am a certified Tailor</p>
-                         </div> 
-                         
-                         </div>
-
-                         <div className=" w-full p-1 px-2 border mb-2 rounded-md">
-                            
-                            <div className="flex items-center  justify-between">
-                                <div className="flex items-center gap-4">
-                                <img src={profile} className="w-9"></img>
-                                <div className="block text-[0.8rem] py-1 ">
-                                    <h2>John Doe</h2>
-                                    <h3 className="text-gray-400">Tailor</h3>
-                                </div></div>
-                                <FaEllipsisV className="text-gray-400"/>
-                            </div>
-
-                            <div className="p-1">
-                            <p className="text-sm ">I am a certified Tailor.I am a certified Tailor.I am a certified Tailor.I am a certified Tailor</p>
-                         </div> 
-                         
-                         </div>
                          
                  
 
@@ -219,7 +254,7 @@ const Explore = () => {
       <div className="w-px h-full bg-gray-300"></div>
     </div>
 
-                            <div className="lg:block hidden border border-black-500 rounded-md p-5 h-auto w-1/2">
+                            <div className="max-h-[80vh] lg:overflow-y-auto lg:block hidden border border-black-500 rounded-md p-5 h-auto w-1/2">
 
                             </div>
                       
