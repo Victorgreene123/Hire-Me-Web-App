@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/footer";
 import { FaArrowLeft, FaBookmark, FaCircle, FaEllipsisV, FaFacebook, FaGripLinesVertical, FaHeart, FaInstagram, FaSpinner, FaStar, FaWhatsapp } from "react-icons/fa";
 import profile from '../Assets/profile.png'
+import illlusration from '../Assets/recruitment-concept.png'
 import User from "../components/User";
 import { Link } from "react-router-dom";
 const Explore = () => {
@@ -265,15 +266,20 @@ const Explore = () => {
       <div className="w-px h-full bg-gray-300"></div>
     </div>
 
-                            <div className="   bg-white hidden  lg:max-h-[80vh] lg:overflow-y-auto lg:block  border border-black-500 rounded-md p-5 lg:h-auto lg:w-1/2">
-            <img src={`images/profile2.jpg`} className="w-40 mx-auto h-40 rounded-full object-cover" alt="Profile" />
-            <h2 className="font-semibold text-2xl text-center">John Doe</h2>
+            <div className="   bg-white hidden  lg:max-h-[80vh] lg:overflow-y-auto lg:block  border border-black-500 rounded-md p-5 lg:h-auto lg:w-1/2">
+                            {
+
+                            active !== "" ?
+                            <>
+
+                            <img src={`images/${users.find((item) => item.userId === active).image}`} className="w-40 mx-auto h-40 rounded-full object-cover" alt="Profile" />
+            <h2 className="font-semibold text-2xl text-center">{users.find((item) => item.userId === active).name}</h2>
             <h3 className="text-center w-full text-1xl justify-center text-gray-400 flex items-center gap-1">
-                Teacher
+            {users.find((item) => item.userId === active).occupation}
                 <FaCircle className="text-[0.5rem] text-gray-500" />
-              Ikeja
+                {users.find((item) => item.userId === active).location}
                 <FaCircle className="text-[0.5rem] text-gray-500" />
-                4.5/5.0 <FaStar />
+                {users.find((item) => item.userId === active).rating}/5.0 <FaStar />
               </h3>
             <div className="mt-4 flex gap-3 mx-auto justify-center w-1/2">
                 <FaFacebook className="w-8 h-8 border p-1 rounded-md text-2xl"/>
@@ -294,9 +300,12 @@ const Explore = () => {
                     <span className="flex  justify-center">Reviews</span>
                 </h3>
             </div>
-            <button className="mt-6 bg-[#340352] text-white rounded-md py-3 px-5 border  mx-auto flex">Send a Booking</button>
-
-
+            <a 
+            target="_blank" 
+            href={`https://wa.me/${users.find((item) => item.userId === active).whatsapp}?text=Hi%20I%20am%20from%20the%20HireME%20website,%20I%20would%20need%20you%20to%20do%20some%20work%20for%20me.%20I%20need%20a%20${users.find((item) => item.userId === active).occupation}`}
+            ><button className="mt-6 bg-[#340352] items-center text-white rounded-md py-3 px-5 border  mx-auto flex"><FaWhatsapp className="text-2xl"/> Send a Booking</button></a>
+</>   : <img src={illlusration} className="w-full "></img>
+                            }
                             </div>
                       
                 </div>
@@ -342,7 +351,7 @@ const Explore = () => {
             <a 
             target="_blank" 
             href={`https://wa.me/${users.find((item) => item.userId === active).whatsapp}?text=Hi%20I%20am%20from%20the%20HireME%20website,%20I%20would%20need%20you%20to%20do%20some%20work%20for%20me.%20I%20need%20a%20${users.find((item) => item.userId === active).occupation}`}
-            ><button className="mt-6 bg-[#340352] items-center text-white rounded-md py-3 px-5 border  mx-auto flex"><FaWhatsapp /> Send a Booking</button></a>
+            ><button className="mt-6 bg-[#340352] items-center text-white rounded-md py-3 px-5 border  mx-auto flex"><FaWhatsapp className="text-2xl"/> Send a Booking</button></a>
 
 
                             </div>}

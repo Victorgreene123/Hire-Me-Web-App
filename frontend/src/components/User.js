@@ -20,7 +20,7 @@ const User = ({ isOpen, toggleOpen, userId , image , name , occupation , locatio
               </h3>
             </div>
           </div>
-          <button onClick={() => toggleOpen(userId)}>
+          {/* <button onClick={() => toggleOpen(userId)}>
            {isOpen ? <FaTimes className="text-gray-400"/> : <FaEllipsisV className="text-gray-400" /> }
           </button>
           <div
@@ -33,7 +33,7 @@ const User = ({ isOpen, toggleOpen, userId , image , name , occupation , locatio
                 
                 
             </ul>
-          </div>
+          </div> */}
         </div>
 
         <div className="p-1">
@@ -46,10 +46,10 @@ const User = ({ isOpen, toggleOpen, userId , image , name , occupation , locatio
             <FaHandshake className="text-red-600" />50+{" "}Contracts
           </h3>
           
-          <a target="_blank" href={`https://wa.me/${whatsapp}?text=Hi%20I%20am%20from%20the%20HireME%20website,%20I%20would%20need%20you%20to%20do%20some%20work%20for%20me.%20I%20need%20a%20${occupation}`}
+          {/* <a target="_blank" href={`https://wa.me/${whatsapp}?text=Hi%20I%20am%20from%20the%20HireME%20website,%20I%20would%20need%20you%20to%20do%20some%20work%20for%20me.%20I%20need%20a%20${occupation}`}
           ><button className="border text-sm flex items-center rounded-lg px-2 py-1">
             <FaBookmark /> Book
-          </button></a>
+          </button></a> */}
         </div>
       </div>
     </>
