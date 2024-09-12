@@ -75,3 +75,7 @@
     align-items: center;
     height: 100vh; /* Full page height */
   }
+  .zeroheight{
+    height: 0px;
+    display: none;
+  }

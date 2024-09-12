@@ -2,10 +2,10 @@ import React from "react";
 import { FaBookmark, FaCircle, FaEllipsisV, FaHandshake, FaHeart, FaStar, FaTimes } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
-const User = ({ isOpen, toggleOpen, userId , image , name , occupation , location ,rating, bio , whatsapp , clickUser , isUserclicked}) => {
+const User = ({ isOpen, toggleOpen, userId , image , name , occupation , location ,rating, bio , whatsapp , clickUser , isUserclicked , active}) => {
   return (
     <>
-      <div className={`w-full p-1 px-2 border mb-2 rounded-md hover:opacity-80  ${isUserclicked ? "border-[#340352]" : "border"}`} onClick={clickUser}>
+      <div className={`w-full p-1 px-2 border mb-2 rounded-md hover:opacity-80  ${active === userId ? "border-[#340352]" : "border"}`} onClick={clickUser}>
         <div className="relative flex items-center justify-between">
           <div className="relative flex items-center gap-4">
             <img src={`images/${image}`} className="w-9 h-9 rounded-full object-cover" alt="Profile" />

@@ -9,21 +9,21 @@ const Navbar = (props) => {
     const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => setIsOpen(!isOpen);
-    useEffect(() => {
-      const handleScroll = () => {
-        if (window.scrollY > 50) {
-          setIsFixed(true);
-        } else {
-          setIsFixed(false);
-        }
-      };
+    // useEffect(() => {
+    //   const handleScroll = () => {
+    //     if (window.scrollY > 50) {
+    //       setIsFixed(true);
+    //     } else {
+    //       setIsFixed(false);
+    //     }
+    //   };
   
-      window.addEventListener('scroll', handleScroll);
+    //   window.addEventListener('scroll', handleScroll);
   
-      return () => {
-        window.removeEventListener('scroll', handleScroll);
-      };
-    }, []);
+    //   return () => {
+    //     window.removeEventListener('scroll', handleScroll);
+    //   };
+    // }, []);
   
     return (
       <nav
