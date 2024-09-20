@@ -303,7 +303,7 @@ const Explore = () => {
             <a 
             target="_blank" 
             href={`https://wa.me/${users.find((item) => item.userId === active).whatsapp}?text=Hi%20I%20am%20from%20the%20HireME%20website,%20I%20would%20need%20you%20to%20do%20some%20work%20for%20me.%20I%20need%20a%20${users.find((item) => item.userId === active).occupation}`}
-            ><button className="mt-6 bg-[#340352] items-center text-white rounded-md py-3 px-5 border  mx-auto flex"><FaWhatsapp className="text-2xl"/> Send a Booking</button></a>
+            ><button className="mt-6 bg-[#340352] items-center text-white rounded-md py-3 px-5 border  mx-auto flex"><FaWhatsapp className="text-2xl mr-2"/> Send a Booking</button></a>
 </>   : <img src={illlusration} className="w-full "></img>
                             }
                             </div>
@@ -351,7 +351,7 @@ const Explore = () => {
             <a 
             target="_blank" 
             href={`https://wa.me/${users.find((item) => item.userId === active).whatsapp}?text=Hi%20I%20am%20from%20the%20HireME%20website,%20I%20would%20need%20you%20to%20do%20some%20work%20for%20me.%20I%20need%20a%20${users.find((item) => item.userId === active).occupation}`}
-            ><button className="mt-6 bg-[#340352] items-center text-white rounded-md py-3 px-5 border  mx-auto flex"><FaWhatsapp className="text-2xl"/> Send a Booking</button></a>
+            ><button className="mt-6 bg-[#340352] items-center text-white rounded-md py-3 px-5 border  mx-auto flex"><FaWhatsapp className="text-2xl mr-2"/> Send a Booking</button></a>
 
 
                             </div>}

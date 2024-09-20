@@ -8,6 +8,7 @@ import Home from './pages/homepage';
 import Signup from './pages/register';
 import Login from './pages/login';
 import Explore from './pages/explore';
+import ProfilePage from './pages/profile';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Route path='signup' element={<Signup />} />
       <Route path='login' element={<Login/>} />
       <Route path='find-professionals' element={<Explore/>} />
+      <Route path='/profile/:name' element={<ProfilePage />} />
 
       </Route>
     </Routes>
