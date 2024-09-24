@@ -38,7 +38,7 @@ const Signup = () => {
         setTimeout(() => {
             setLoading(false); // Stop loading after 3 seconds
           }, 3000);
-          console.log("E de work")
+         
         
     }
 
@@ -85,16 +85,7 @@ const Signup = () => {
                                     onChange={handleChange}
                                 />
                             </div>
-                            <div className="w-full mb-4">
-                                <label>WhatsApp Number</label>
-                                <input
-                                    name="phoneNumber"
-                                    placeholder="081xxxxxxxx"
-                                    className="border rounded-md p-3 w-full"
-                                    value={formData.phoneNumber}
-                                    onChange={handleChange}
-                                />
-                            </div>
+                            
                         </div>
                     </div>
                 );
@@ -104,6 +95,16 @@ const Signup = () => {
                         <h2 className="text-2xl font-bold lg:text-3xl">Address Information</h2>
                         <p className="text-sm">Please provide your residential address details.</p>
                         <div className="mt-8">
+                        <div className="w-full mb-4">
+                                <label>WhatsApp Number</label>
+                                <input
+                                    name="phoneNumber"
+                                    placeholder="081xxxxxxxx"
+                                    className="border rounded-md p-3 w-full"
+                                    value={formData.phoneNumber}
+                                    onChange={handleChange}
+                                />
+                            </div>
                             <div className="w-full mb-4">
                                 <label>Street Address</label>
                                 <input
@@ -124,16 +125,7 @@ const Signup = () => {
                                     onChange={handleChange}
                                 />
                             </div>
-                            <div className="w-full mb-4">
-                                <label>Postal Code</label>
-                                <input
-                                    name="postalCode"
-                                    placeholder="10001"
-                                    className="border rounded-md p-3 w-full"
-                                    value={formData.postalCode}
-                                    onChange={handleChange}
-                                />
-                            </div>
+                            
                         </div>
                     </div>
                 );
@@ -227,7 +219,7 @@ const Signup = () => {
                                 </div>
                                 <div className="hidden text-sm mt-1 lg:block leading-tight text-white">
                                     <h2>STEP 2</h2>
-                                    <h2>YOUR INFO</h2>
+                                    <h2>Billing details</h2>
                                 </div>
                             </div>
 
@@ -237,7 +229,7 @@ const Signup = () => {
                                 </div>
                                 <div className="hidden text-sm mt-1 lg:block leading-tight text-white">
                                     <h2>STEP 3</h2>
-                                    <h2>YOUR INFO</h2>
+                                    <h2>Payment information</h2>
                                 </div>
                             </div>
 
@@ -247,7 +239,7 @@ const Signup = () => {
                                 </div>
                                 <div className="hidden text-sm mt-1 lg:block leading-tight text-white">
                                     <h2>STEP 4</h2>
-                                    <h2>YOUR INFO</h2>
+                                    <h2>Finish</h2>
                                 </div>
                             </div>
 
@@ -278,6 +270,8 @@ const Signup = () => {
                             </div>
                     </div>
                 </div>
+                <p className="text-center">Already have an account ?<Link className="text-[#340352]" to="/login">Login</Link>  </p>
+
             </div>
         </>
     );

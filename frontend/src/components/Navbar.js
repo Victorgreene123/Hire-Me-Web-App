@@ -31,7 +31,7 @@ const Navbar = (props) => {
           isFixed ? 'fixed top-0 left-0 z-50 shadow-lg bg-[#340352]' : ''
         }`}
       >
-        <img src={logo} alt="Logo" className="w-24 h-auto" />
+        <Link to='/'><img src={logo} alt="Logo" className="w-24 h-auto" /></Link>
         <div className="absolute flex items-center lg:hidden right-4">
           <Link to="/login" className="mr-3 text-[1rem]">
             <span className="text-white open-sans-normal">Log in</span>
