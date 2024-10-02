@@ -49,8 +49,8 @@ const ProfilePage = () =>{
 
                             </div> */}
 <div>
-            <div className="flex shadow-lg border">
-                <div className="lg:w-4/5 w-full  mx-auto   p-2 ">
+            <div className="flex  ">
+                <div className="lg:w-4/5 w-full  mx-auto    ">
                     <div className="relative ">
                     <div className="w-full border rounded-md ">
                         <img src={picture1} className="w-full lg:h-64 h-44 border rounded-md"></img>
