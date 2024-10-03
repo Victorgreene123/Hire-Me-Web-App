@@ -39,28 +39,32 @@ const DashNav = () =>{
 
   {/* Desktop Menu */}
   <div className="absolute right-0 flex items-center flex-grow justify-between">
+    
     <div className="flex items-center gap-4">
       {/* Profile Image */}
+     <div className="hidden lg:flex items-center gap-4"> 
       <img
         src="/images/profile1.jpg"
         className="border-2 border-white w-10 h-10 rounded-full object-cover "
         alt="Profile"
       />
     <div className="relative">
-    <FaRegCommentDots className="text-white text-2xl" />
+    <Link to='notifications'><MdNotifications className="text-white text-1xl" />
     {/* Notification Dot */}
-    <span className="absolute top-0 right-0 block h-2 w-2 bg-red-600 rounded-full"></span>
+    <span className="absolute top-0 right-0 block h-2 w-2 bg-red-600 rounded-full"></span></Link>
   </div>
 
   {/* Message Icon */}
   <div className="relative">
-    <MdChat className="text-white text-2xl" />
+    <MdChat className="text-white text-1xl" />
     {/* Notification Dot */}
-    <span className="absolute top-0 right-0 block h-2 w-2 bg-red-600 rounded-full"></span>
+    <span className="absolute top-0 right-0 block h-2 w-2 bg-red-600 rounded-full"></span></div>
   </div>
 
+  
+
   {/* Logout Icon (No Notification Dot) */}
-  <MdLogout className="text-white text-2xl" />
+  <MdLogout className="text-white text-1xl" />
 
     </div>
   </div>

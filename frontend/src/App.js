@@ -11,6 +11,8 @@ import Explore from './pages/explore';
 import ProfilePage from './pages/profile';
 import NoPage from './pages/nopage';
 import Dashboard from './pages/dashboard';
+import DashLayout from './components/dashLayout';
+import Notification from './pages/notifications';
 
 function App() {
   return (
@@ -22,7 +24,10 @@ function App() {
       <Route path='signup' element={<Signup />} />
       <Route path='login' element={<Login/>} />
       <Route path='find-professionals' element={<Explore/>} />
-      <Route path='dashboard' element={<Dashboard />} />
+      <Route path='dashboard' element={<DashLayout />} >
+          <Route index element={<Dashboard />} />
+          <Route path='notifications' element={<Notification />} />
+      </Route>
       <Route path='/profile/:name' element={<ProfilePage />} />
       <Route path="*" element={<NoPage />} />
       </Route>
