@@ -9,10 +9,10 @@ const Notification =() =>{
         <>
             <div className="w-full bg-[#EFF5FF] p-3 min-h-[100vh] ">
        
-       <div className="text-[#340352] mt-1 w-full p-1 flex justify-between">
-         <h2>Notifications</h2>
+       <div className="items-center text-[#340352] mt-1 w-full p-1 flex justify-between">
+         <h2 className="text-2xl font-bold">Inbox</h2>
          <div>
-           <h2 className="flex items-center "><Link to='/dashboard' className="flex items-center"><MdHome />Home</Link> <FaArrowRight  className="ml-2 mr-1"/> <MdNotifications /> Notifications</h2>
+           <h2 className="flex items-center "><Link to='/dashboard' className="flex items-center"><MdHome />Home</Link> <FaArrowRight  className="ml-2 mr-1"/> <MdNotifications /> Inbox</h2>
          </div>
        </div>
 

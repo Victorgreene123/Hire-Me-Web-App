@@ -54,8 +54,8 @@ const Dashboard = () =>{
 
     <div className="w-full bg-[#EFF5FF] p-3 min-h-[100vh] ">
        
-    <div className="text-[#340352] w-full p-2 flex justify-between">
-      <h2>Dashboard</h2>
+    <div className="items-center text-[#340352] w-full p-2 flex justify-between">
+      <h2 className="text-2xl font-bold">Dashboard</h2>
       <div>
         <h2 className="flex items-center "><MdHome />Home  <FaArrowRight  className="ml-2 mr-1"/>  <MdDashboard /> Dashboard</h2>
       </div>

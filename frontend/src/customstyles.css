@@ -79,3 +79,9 @@
     height: 0px;
     display: none;
   }
+  .truncate-text {
+    width: 250px; /* Set your preferred width */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; /* Clips the text and adds "..." */
+  }
