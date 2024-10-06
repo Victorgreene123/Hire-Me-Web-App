@@ -25,7 +25,7 @@ const DashNav = () =>{
     }, []);
     return (
         <nav
-        className={`flex w-full h-[65px] lg:px-5 p-3 bg-[#340352] text-[18px] justify-between items-center ${
+        className={` border-[#340352] flex w-full h-[65px] lg:px-5 p-3 bg-[#340352] text-[18px] justify-between items-center ${
           isFixed ? 'fixed top-0 left-0 z-50 shadow-lg bg-[#340352]' : ''
         }`}
       >

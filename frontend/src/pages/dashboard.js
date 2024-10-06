@@ -57,7 +57,7 @@ const Dashboard = () =>{
     <div className="items-center text-[#340352] w-full p-2 flex justify-between">
       <h2 className="text-2xl font-bold">Dashboard</h2>
       <div>
-        <h2 className="flex items-center "><MdHome />Home  <FaArrowRight  className="ml-2 mr-1"/>  <MdDashboard /> Dashboard</h2>
+        <h2 className="flex items-center "><MdHome />Home  </h2>
       </div>
     </div>
    
