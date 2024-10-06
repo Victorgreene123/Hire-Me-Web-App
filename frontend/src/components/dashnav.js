@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { FaBell, FaComment, FaEnvelope, FaHome, FaRegCommentDots, FaSignOutAlt, FaUser, FaUserPlus } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import logo from '../Assets/hiremelogo.png'
-import { MdChat, MdLogout, MdMessage, MdNotifications } from 'react-icons/md';
+import { MdChat, MdLogout, MdMessage, MdNotifications, MdSettings } from 'react-icons/md';
 const DashNav = () =>{
     const [isFixed, setIsFixed] = useState(false);
     const [isOpen, setIsOpen] = useState(false);
@@ -65,6 +65,7 @@ const DashNav = () =>{
 
   {/* Logout Icon (No Notification Dot) */}
   <MdLogout className="text-white text-1xl" />
+  <MdSettings className="text-white text-1xl" />
 
     </div>
   </div>
