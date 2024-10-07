@@ -10,18 +10,15 @@ const ProfilePage = () =>{
         <>
         
 <div className="pb-16">
-            <div className="flex  ">
-                <div className="hidden lg:block w-1/4 h-[90vh] border border-black max-h-[90vh]">
 
-                </div>
-                <div className="border-[#340352]   text-white lg:w-1/2 w-full  mx-auto     ">
+            <div className="flex  ">
+               
+                <div className="  text-white lg:w-full w-full  mx-auto  ">
                     <div className=" ">
-                    {/* <div className="w-full border rounded-md ">
-                        <img src={picture1} className="w-full lg:h-64 h-44 border rounded-md"></img>
-                    </div> */}
-                    <div className="py-6 bg-[#340352] block justify-between">
+                    
+                    <div className="py-6 bg-[#340352] block justify-between ">
                         <div className=" gap-3 items-center justify-between">
-                            <img className=" mx-auto lg:w-36 lg:h-36 w-32 h-32 rounded-full object-cover   border-2 border-white" src="/images/profile1.jpg" ></img>
+                            <img className=" mx-auto lg:w-36 lg:h-36 w-32 h-32 rounded-full object-cover   lg:border-4 border-2 border-white" src="/images/profile1.jpg" ></img>
                             <div className="mx-auto text-center block ">
                                 <h2 className=" lg:text-3xl text-[1.1rem] font-semibold">Victor Okereafor</h2>
                                 <h3 className="justify-center  w-full text-[1rem]   flex items-center gap-1">
@@ -60,7 +57,7 @@ const ProfilePage = () =>{
 
                     {/* END OF PROFILE HEADER */}
                   
-                       <div className="bg-[#EFF5FF] block  space-y-3 py-2  px-2">
+                       <div className="bg-[#EFF5FF] block  flex-1 gap-2 lg:flex  lg:space-y-0 space-y-3 py-2 lg:py-6 px-2">
                                             
                             
                             <div className="shadow-md border-2 bg-white border-white w-full border rounded-md p-3 h-60 mt-0">
@@ -70,10 +67,10 @@ const ProfilePage = () =>{
                                  <h3 className="text-black opacity-60 ">Write something about yourself</h3>
                                  {/* <h3 className="text-black opacity-60 text-center  ">I am a really ttalwented worker wo is ready to work and serve any of my clients</h3> */}
                                  
-                                 <button className="mt-1 mx-auto items-center gap-1 text-sm flex px-2 py-1 border rounded-md text-[#340352] border-[#340352]">
+                                <Link to='bio'> <button className="mt-1 mx-auto items-center gap-1 text-sm flex px-2 py-1 border rounded-md text-[#340352] border-[#340352]">
                                     <FaPlus />
                                     Add
-                                 </button>
+                                 </button></Link>
                                 </div>
                                  </div>
                             </div>
@@ -113,9 +110,7 @@ const ProfilePage = () =>{
 
 
                 </div>
-                <div className=" lg:block hidden w-1/4 h-[90vh] border border-black max-h-[90vh]">
-
-</div>
+                
             </div>
             
 </div>

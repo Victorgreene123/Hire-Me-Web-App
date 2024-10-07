@@ -85,3 +85,10 @@
     overflow: hidden;
     text-overflow: ellipsis; /* Clips the text and adds "..." */
   }
+
+  .noborder{
+    border: none;
+  }
+  .noborder:focus{
+    border: none;
+  }
