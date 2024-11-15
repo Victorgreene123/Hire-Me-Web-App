@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { FaBell, FaComment, FaEnvelope, FaHome, FaRegCommentDots, FaSignOutAlt, FaUser, FaUserPlus } from "react-icons/fa";
+import { FaBell, FaChartBar, FaComment, FaEnvelope, FaHome, FaRegCommentDots, FaSignOutAlt, FaUser, FaUserPlus } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import logo from '../Assets/hiremelogo.png'
 import { MdChat, MdLogout, MdMessage, MdNotifications, MdSettings } from 'react-icons/md';
@@ -40,32 +40,37 @@ const DashNav = () =>{
   {/* Desktop Menu */}
   <div className="absolute right-0 flex items-center flex-grow justify-between">
     
-    <div className="flex items-center gap-4">
+    <div className="flex items-center gap-5">
       {/* Profile Image */}
-     <div className="hidden lg:flex items-center gap-4"> 
-      <img
-        src="/images/profile1.jpg"
-        className="border-2 border-white w-10 h-10 rounded-full object-cover "
-        alt="Profile"
-      />
+     <div className="hidden lg:flex items-center gap-14"> 
+    <Link to='/dashboard'><FaChartBar className="text-white text-3xl" /></Link>
+     
     <div className="relative">
-    <Link to='notifications'><MdNotifications className="text-white text-1xl" />
+    <Link to='inbox'><MdNotifications className="text-white text-2xl" />
     {/* Notification Dot */}
     <span className="absolute top-0 right-0 block h-2 w-2 bg-red-600 rounded-full"></span></Link>
   </div>
 
   {/* Message Icon */}
   <div className="relative">
-    <MdChat className="text-white text-1xl" />
+    <Link to='chats'><MdChat className="text-white text-2xl" /></Link>
     {/* Notification Dot */}
     <span className="absolute top-0 right-0 block h-2 w-2 bg-red-600 rounded-full"></span></div>
+    <MdLogout className="text-white text-3xl" />
+    <Link to="settings"><MdSettings className="text-white text-3xl" /></Link>
+ <Link to='profile/JohnDoe'> <img
+        src="/images/profile1.jpg"
+        className="border-2 border-white w-10 h-10 rounded-full object-cover "
+        alt="Profile"
+      /></Link>
+
   </div>
 
   
 
   {/* Logout Icon (No Notification Dot) */}
-  <MdLogout className="text-white text-1xl" />
-  <MdSettings className="text-white text-1xl" />
+  <MdLogout className="lg:hidden text-white text-2xl" />
+  <Link to="settings"><MdSettings className="lg:hidden text-white text-2xl" /></Link>
 
     </div>
   </div>

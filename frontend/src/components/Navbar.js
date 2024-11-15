@@ -34,10 +34,10 @@ const Navbar = (props) => {
         <Link to='/'><img src={logo} alt="Logo" className="w-24 h-auto" /></Link>
         <div className="absolute flex items-center lg:hidden right-4">
           <Link to="/login" className="mr-3 text-[1rem]">
-            <span className="text-white open-sans-normal">Log in</span>
+            <span className=" open-sans-normal p-3 border border-white rounded-md text-white">Sign in</span>
           </Link>
-          <i className={`fas fa-search mr-2 ${ isFixed ? 'text-white' : 'text-white'}`}></i>
-        <button onClick={toggleMenu}><i className={`fas ${isOpen ? "fa-times" : "fa-bars" } ${ isFixed ? 'text-white' : 'text-white'} lg:hidden`} ></i></button>
+          
+        <button onClick={toggleMenu}><i className={`fas ${isOpen ? "fa-times" : "fa-bars" } text-1xl ${ isFixed ? 'text-white' : 'text-white'} lg:hidden`} ></i></button>
 
         </div>
         <div className="hidden lg:flex items-center flex-grow justify-between">

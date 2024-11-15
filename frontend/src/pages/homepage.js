@@ -42,7 +42,7 @@ const Home =() =>{
        
         <div className="   w-[100%] mx-auto lg:flex block gap-10 pl-5 lg:py-0 py-20 pr-2 lg:pl-5 lg:pr-0 lg:mt-12 ">
             
-            <div className="relative lg:w-3/5 lg:px-10  mx-auto lg:mx-0 w-full lg:pb-0 pb-5">
+            <div className="relative lg:w-1/2 lg:px-12  mx-auto lg:mx-0 w-full lg:pb-0 pb-5">
             {/* <img className="w-[68%]  mx-auto h-full lg:hidden rounded-full" src={picture1} alt="" /> */}
      
 

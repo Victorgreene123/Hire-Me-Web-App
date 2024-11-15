@@ -34,7 +34,7 @@ const Bio = () => {
         <h2 className="text-[1.1rem]">Edit Bio</h2>
       </div>
       <div className="w-full p-2 ">
-      <div className="bg-white  rounded-md  shadow-md h-64  w-full  relative mt-14">
+      <div className="bg-white  rounded-md  shadow-md h-64  w-full lg:w-1/2 lg:mx-auto  relative mt-14">
         <h2 className="absolute right-2 top-0 text-gray-400"> {getBioCount()}/150</h2>
         <textarea className="w-full py-10  px-4  h-full  text-center " value={newbio} onChange={handleChange} maxLength={150}/>
         <button className="absolute right-2 bottom-2  px-4 py-2 bg-[#340352] text-white rounded" >

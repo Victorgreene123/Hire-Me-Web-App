@@ -16,6 +16,7 @@ import Notification from './pages/notifications';
 import Chats from './pages/Chats';
 import ProfLayout from './components/Proflayout';
 import Bio from './pages/EditBio';
+import Settings from './pages/Settings';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
       <Route path='dashboard' element={<DashLayout />} >
           <Route index element={<Dashboard />} />
           <Route path='inbox' element={<Notification />} />
+          <Route path='settings' element={<Settings/>} />
           <Route path='chats' element={<Chats />} />
       <Route path='profile/:name' element={<ProfLayout />}>
        <Route index element={<ProfilePage />} />

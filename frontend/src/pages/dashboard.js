@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { FaArrowRight, FaBell, FaCalendarAlt, FaCalendarDay, FaClock, FaDollarSign, FaEnvelope, FaFileInvoiceDollar, FaHome, FaProjectDiagram, FaUser, FaUserCheck, FaUserPlus } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { json, Link } from "react-router-dom";
 import logo from '../Assets/hiremelogo.png'
 
 import '../customstyles.css'
@@ -8,7 +8,8 @@ import DashNav from "../components/dashnav";
 import Stat from "../components/stats";
 import { MdDashboard, MdHome } from "react-icons/md";
 const Dashboard = () =>{
-    
+
+ 
     const stats = [
       {
         icon: <FaDollarSign  />,
