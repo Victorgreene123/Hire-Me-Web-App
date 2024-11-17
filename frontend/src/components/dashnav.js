@@ -3,10 +3,15 @@ import { FaBell, FaChartBar, FaComment, FaEnvelope, FaHome, FaRegCommentDots, Fa
 import { Link } from "react-router-dom";
 import logo from '../Assets/hiremelogo.png'
 import { MdChat, MdLogout, MdMessage, MdNotifications, MdSettings } from 'react-icons/md';
+import { useAuth } from "../context/Authcontext";
 const DashNav = () =>{
     const [isFixed, setIsFixed] = useState(false);
     const [isOpen, setIsOpen] = useState(false);
+  const { logout, isAuthenticated } = useAuth();
 
+  const handleLogout = () => {
+    logout();
+};
   const toggleMenu = () => setIsOpen(!isOpen);
     useEffect(() => {
       const handleScroll = () => {
@@ -69,7 +74,7 @@ const DashNav = () =>{
   
 
   {/* Logout Icon (No Notification Dot) */}
-  <MdLogout className="lg:hidden text-white text-2xl" />
+  <MdLogout className="lg:hidden text-white text-2xl" onClick={handleLogout} />
   <Link to="settings"><MdSettings className="lg:hidden text-white text-2xl" /></Link>
 
     </div>

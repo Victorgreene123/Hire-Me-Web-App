@@ -359,7 +359,7 @@ const Signup = () => {
             setLoading(true);
     
             try {
-                const response = await fetch("http://192.168.43.223:8000/api/users/", {
+                const response = await fetch("https://hire-me-backend-q3kk.onrender.com/api/users/", {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json"

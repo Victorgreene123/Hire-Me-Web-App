@@ -1,14 +1,24 @@
 import React, { useEffect, useState } from "react";
 import { FaArrowRight, FaBell, FaCalendarAlt, FaCalendarDay, FaClock, FaDollarSign, FaEnvelope, FaFileInvoiceDollar, FaHome, FaProjectDiagram, FaUser, FaUserCheck, FaUserPlus } from "react-icons/fa";
-import { json, Link } from "react-router-dom";
+import { json, Link, useNavigate } from "react-router-dom";
 import logo from '../Assets/hiremelogo.png'
 
 import '../customstyles.css'
 import DashNav from "../components/dashnav";
 import Stat from "../components/stats";
 import { MdDashboard, MdHome } from "react-icons/md";
+import { useAuth } from "../context/Authcontext";
 const Dashboard = () =>{
+  const { login, error, loading, isAuthenticated, user } = useAuth();
+  const navigate = useNavigate();
 
+ 
+    if (!isAuthenticated){
+      navigate('/login')
+      
+    }
+
+  console.log(isAuthenticated)
  
     const stats = [
       {

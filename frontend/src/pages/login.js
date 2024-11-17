@@ -1,13 +1,24 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { FaArrowLeft, FaEye, FaEyeSlash, FaSpinner } from "react-icons/fa";
 import logo from '../Assets/hireme 1_010317.png';
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { useAuth } from "../context/Authcontext";
 
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
-  const [loading, setLoading] = useState(false);
+  const { login, error, loading, isAuthenticated, user } = useAuth();
+  const navigate = useNavigate();
+  useEffect(() =>{
+    if (isAuthenticated){
+      console.log(isAuthenticated)
+      navigate('/dashboard')
+      
+    }
+  })
+ 
+  
 
   // Function to toggle password visibility
   const togglePasswordVisibility = () => {
@@ -19,11 +30,7 @@ const Login = () => {
         email: email,
         password : password
     }
-    setLoading(true)
-    setTimeout(() => {
-        setLoading(false); // Stop loading after 3 seconds
-      }, 3000);
-      console.log("E de work")
+    login(payload);
     
 }
   return (
@@ -50,6 +57,7 @@ const Login = () => {
             {/* Input Fields */}
             <div className="mt-12">
               {/* Email Input */}
+        
               <input
                 placeholder="Email"
                 type="email"

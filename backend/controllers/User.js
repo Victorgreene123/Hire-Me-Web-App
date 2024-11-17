@@ -14,6 +14,7 @@ const createUser = async (req, res) => {
     }
     // Hash the password before storing
     const hashedPassword = await bcrypt.hash(req.body.password, 10);
+    
     req.body.password = hashedPassword
    
 
@@ -54,7 +55,7 @@ const getUser = async (req, res) => {
     }
 
     // Send user data as response
-    res.status(200).json(user);
+    res.status(200).json({user : user});
   } catch (error) {
     console.error('Error fetching user:', error);
     res.status(500).json({ message: 'Server error' });
