@@ -75,7 +75,7 @@ const Dashboard = () =>{
       <div className="pb-12 mt-3">
         
        
-          <h1 className="text-gray-600 font-normal lg:text-3xl text-2xl text-center">Welcome , <span className="text-[#340352]">Victor</span> 👋</h1>
+          <h1 className="text-gray-600 font-normal lg:text-3xl text-2xl text-center">Welcome , <span className="text-[#340352]">{user.name.trim().split(' ')[0]}</span> 👋</h1>
           <div className="flex w-full mt-3">
           <div className="lg:flex mx-auto  w-full lg:w-4/5 block lg:space-y-0 space-y-2 items-center gap-3">
             {stats.map((item, index) =>{
