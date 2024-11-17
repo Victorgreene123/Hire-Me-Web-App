@@ -8,7 +8,7 @@ export const useAuth = () => useContext(AuthContext);
 
 // AuthProvider Component
 export const AuthProvider = ({ children }) => {
-    const [user, setUser] = useState(null);
+    const [user, setUser] = useState(localStorage.getItem("user") || null);
     const [token, setToken] = useState(localStorage.getItem("authToken") || null);
     const [userId, setUserId] = useState(localStorage.getItem("userId") || null);
     const [isAuthenticated, setIsAuthenticated] = useState(!!token); // Initialize based on token
@@ -46,6 +46,8 @@ export const AuthProvider = ({ children }) => {
                 setToken(data.token);
                 setUserId(data.user._id);
                 setIsAuthenticated(true);
+                localStorage.setItem("user", data.user);
+
                 localStorage.setItem("authToken", data.token);
                 localStorage.setItem("userId", data.user._id);
             } else {
@@ -71,6 +73,7 @@ export const AuthProvider = ({ children }) => {
         setUserId(null);
         setIsAuthenticated(false);
         localStorage.removeItem("authToken");
+        localStorage.removeItem("user");
         localStorage.removeItem("userId");
     };
 
@@ -92,6 +95,8 @@ export const AuthProvider = ({ children }) => {
                         const data = await response.json();
                         console.log("User data fetched: ", data.user);
                         setUser(data.user);
+                localStorage.setItem("user", data.user);
+
                         setIsAuthenticated(true);
                     } else {
                         console.error("Invalid token or user ID. Logging out.");
