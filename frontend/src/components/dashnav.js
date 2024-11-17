@@ -74,7 +74,7 @@ const DashNav = () =>{
   
 
   {/* Logout Icon (No Notification Dot) */}
-  <MdLogout className="lg:hidden text-white text-2xl" onClick={handleLogout} />
+  <MdLogout className="lg:hidden text-white text-2xl hover:text-3xl" onClick={handleLogout} />
   <Link to="settings"><MdSettings className="lg:hidden text-white text-2xl" /></Link>
 
     </div>
