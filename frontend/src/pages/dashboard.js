@@ -12,13 +12,16 @@ const Dashboard = () =>{
   const { login, error, loading, isAuthenticated, user } = useAuth();
   const navigate = useNavigate();
 
- 
-    if (!isAuthenticated){
-      navigate('/login')
-      
-    }
+ useEffect(() =>{
+  if (isAuthenticated === false){
+    console.log(isAuthenticated)
+    navigate('/login')
+    
+  }
+ } , [isAuthenticated])
+   
 
-  console.log(isAuthenticated)
+ 
  
     const stats = [
       {
